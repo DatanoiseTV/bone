@@ -7,12 +7,12 @@
 	<name>GPS tracker</name>
 
 	<description>
-		A GPS-tracker for your enjoyment.
+		This software lets you keep track of things via GPS.
 	</description>
 
-	<author href="https://github.com/Adrianod/Open-GPS-tracker"
-		email="henrikk@gmail.com">
-		Henrik Johansson
+	<author href=""
+		email="x@ext.no-route.org">
+		syso
 	</author>
 
 	<icon src="icon.png" gap:role="default" />
