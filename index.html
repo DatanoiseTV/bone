@@ -9,6 +9,16 @@
 <script src="http://178.62.230.162:8080/socket.io/socket.io.js"></script>
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="app.js"></script>
+
+<script type="text/javascript">
+function batterycallback(info)
+{
+	alert(info.level);	
+};
+
+window.addEventListener("batterystatus", batterycallback, false);
+</script>
+
 </head>
 <body>
 <div id="wrap">

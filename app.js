@@ -9,6 +9,7 @@ $(document).ready(function() {
     var intervalId;
     var watchId;
 
+
     socket.emit('runnerConnect', latlon.id+" connected as runner");
 
     function startTrack() {
@@ -89,4 +90,6 @@ $(document).ready(function() {
     }
 
     $('#startstop').on("click", toggleTimer);
+
+
 });
