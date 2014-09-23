@@ -1,4 +1,4 @@
-$(document).ready(function() {
+//$(document).ready(function() {
     var socket = io.connect('http://178.62.230.162:8080');
 
     var latlon = {};
@@ -92,4 +92,5 @@ $(document).ready(function() {
     $('#startstop').on("click", toggleTimer);
 
 
-});
+//}
+//);
