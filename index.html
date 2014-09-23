@@ -11,19 +11,31 @@
  <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
 <script src="app.js"></script>
 
-<script type="text/javascript">
-function batterycallback(info)
-{
-	alert(info.level);	
-};
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8">
 
-window.addEventListener("batterystatus", batterycallback, false);
-</script>
+    // Wait for device API libraries to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        var element = document.getElementById('deviceProperties');
+        element.innerHTML = 'Device Model: '    + device.model    + '<br />' +
+                            'Device Cordova: '  + device.cordova  + '<br />' +
+                            'Device Platform: ' + device.platform + '<br />' +
+                            'Device UUID: '     + device.uuid     + '<br />' +
+                            'Device Version: '  + device.version  + '<br />';
+    }
+
+    </script>
 
 </head>
 <body>
 <div id="wrap">
     <div id="status" class="stopped"><p>Not tracking</p></div>
+     <p id="deviceProperties">Loading device properties...</p>
     <button id="startstop">Start tracking</button>
 </div>
 </body>
