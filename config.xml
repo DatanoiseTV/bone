@@ -17,15 +17,16 @@
 
 	<icon src="icon.png" gap:role="default" />
 
-	<feature name="Device">
-   		 <param name="android-package" value="org.apache.cordova.Device" />
-	</feature>
-
+	<feature name="http://api.phonegap.com/1.0/battery"/>
 	<feature name="http://api.phonegap.com/1.0/geolocation"/>
 	<feature name="http://api.phonegap.com/1.0/network"/>
-	<feature name="http://api.phonegap.com/1.0/device"/>
+	<feature name="http://api.phonegap.com/1.0/camera"/>
+	<feature name="http://api.phonegap.com/1.0/contacts"/>
+	<feature name="http://api.phonegap.com/1.0/file"/>
+	<feature name="http://api.phonegap.com/1.0/media"/>
 	<feature name="http://api.phonegap.com/1.0/notification"/>
-	<feature name="http://api.phonegap.com/1.0/battery"/>
+	<feature name="http://api.phonegap.com/1.0/device"/>
+
 	<preference name="orientation" value="portrait" />
 	<preference name="exit-on-suspend" value="false" />
 	<preference name="phonegap-version" value="3.5.0" />
