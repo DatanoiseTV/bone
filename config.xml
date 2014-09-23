@@ -4,7 +4,7 @@
 	id			= "com.phonegap.gettingstarted"
 	version 	= "1.0.0">
 
-	<name>GPS tracker</name>
+	<name>Gemini</name>
 
 	<description>
 		This software lets you keep track of things via GPS.
