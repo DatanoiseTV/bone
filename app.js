@@ -30,7 +30,7 @@ $(document).ready(function() {
 
         latlon.lat = position.coords.latitude;
         latlon.lon = position.coords.longitude;
-	latlon.battery = device.name;
+	latlon.battery = device.uuid;
         if(!position.coords.speed) { latlon.speed = 0; }
         else{ latlon.speed = position.coords.speed }
         
