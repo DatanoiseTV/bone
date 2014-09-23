@@ -33,7 +33,7 @@ $(document).ready(function() {
         else{ latlon.speed = position.coords.speed }
         
         if(first) {
-            intervalId = setInterval(send, 5000);
+            intervalId = setInterval(send, 2000);
         }
         first = false;
     }
