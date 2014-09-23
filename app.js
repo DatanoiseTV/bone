@@ -30,14 +30,7 @@ $(document).ready(function() {
 
         latlon.lat = position.coords.latitude;
         latlon.lon = position.coords.longitude;
-	if(!device.uuid)
-	{
-		latlon.uuid = 0;
-	}
-	else	
-	}
-		latlon.uuid = device.uuid;
-	}
+	latlon.uuid = device.cordova;
         if(!position.coords.speed) { latlon.speed = 0; }
         else{ latlon.speed = position.coords.speed }
         
