@@ -35,7 +35,7 @@ $(document).ready(function() {
         else{ latlon.speed = position.coords.speed }
         
         if(first) {
-            intervalId = setInterval(send, 2000);
+            intervalId = setInterval(send, 1000);
         }
         first = false;
     }
